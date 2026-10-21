@@ -17,9 +17,9 @@
  */
 
 /*
- ==============================================================================
+
  TAREA 1 - TALLER V - GPIO, TIMERS Y EXTI
- ==============================================================================
+
 
  DESCRIPCION DEL HARDWARE UTILIZADO
 
@@ -28,10 +28,10 @@
    reinicia el programa en cualquier momento.
 
  - Display de 7 segmentos de 4 digitos KEM-5641-BSR (anodo comun).
-   Los 8 LEDs de cada digito (a, b, c, d, e, f, g, dp) estan unidos entre los
+   Los 8 LEDs de cada digito (a, b, c, d, e, f, g) estan unidos entre los
    4 digitos, y cada digito tiene su propio anodo comun. Por ser anodo comun,
    un segmento se ENCIENDE cuando su pin del STM32 esta en 0 (bajo).
-   Cada segmento lleva una resistencia de 220-330 ohm para limitar la corriente.
+   Cada segmento lleva una resistencia para limitar la corriente.
 
  - 4 transistores PNP (2N3906 / 2N2907), uno por digito.
    Emisor a 3.3 V, colector al anodo comun del digito, y base al STM32 por
@@ -99,7 +99,7 @@
  El contador es de tipo uint16_t (0 a 65535) y no tiene proteccion: al restar
  1 a 0 pasa a 65535 y al sumar 1 a 65535 vuelve a 0. Como el display solo
  tiene 4 digitos, se muestran las 4 ultimas cifras (65535 se ve como 5535).
- ==============================================================================
+
 */
 
 #include <stdint.h>
