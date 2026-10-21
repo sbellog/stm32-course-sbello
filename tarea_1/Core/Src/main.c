@@ -16,7 +16,7 @@
  ******************************************************************************
  */
 
-/*
+/*Sara Ximena Bello Gomez
 
  TAREA 1 - TALLER V - GPIO, TIMERS Y EXTI
 
